@@ -1,0 +1,56 @@
+.product{
+    
+    padding: 3rem 0;
+    border-radius: 1em;
+    margin-bottom: 2em;
+text-align: center;
+
+p{padding: 1rem;
+text-align: justify;}
+
+
+    &__title{
+        font-size: 2rem;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    &__image{
+        margin: -5em 0 0 0;
+
+    }
+        @media (min-width: 45em) {
+            text-align: left;
+            margin-bottom: 9em;
+
+            &__title{
+                margin: 0;
+            }
+            &__image{
+            float: right;
+            margin: 0 -5em 0 0 ;
+            width: 25%; 
+       // outline: 2px solid red; 
+     }
+
+       &.blueone{
+            .product__image{
+                float: left;
+            shape-outside: url(images/fashion3.jpeg);
+       shape-margin: 2em;
+       margin: 0 0 0 -5rem;
+   
+        }
+    }
+}
+}
+
+.blue{
+    background: radial-gradient(rgb(70, 133, 170), rgb(135, 235, 205));
+}.purple{
+    background: radial-gradient(rgb(32, 152, 221),rgb(145, 111, 207));
+}
+.green{
+    background: radial-gradient(rgb(82, 179, 158),rgb(11, 148, 202));
+}

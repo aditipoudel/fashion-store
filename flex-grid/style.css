@@ -1,0 +1,198 @@
+*,
+*::before*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 65em;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.split > * {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  min-width: 10rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.125rem;
+  border-radius: .20rem;
+  padding: .5em 1.25em;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  background-color: cornflowerblue;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+.btn:hover, .btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.main-text {
+  font-size: 3rem;
+  font-size: clamp(2.5rem, calc(5vw +1rem, 3.5rem));
+  line-height: 1.1;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  color: #021831;
+  font-size: clamp(3rem, calc(5vw+1rem, 4rem));
+}
+
+.hero {
+  text-align: center;
+  padding: 15em 0;
+  color: #eee;
+  background: #222;
+}
+
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background-image: url(./images/image.png), radial-gradient(#756e6e, #3a3737);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.featured {
+  background: #eee;
+}
+
+.featured__item {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: cadetblue;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.featured__item:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.featured__item:hover .featured__details {
+  opacity: 1;
+}
+
+.featured__details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.product {
+  padding: 3rem 0;
+  border-radius: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.product p {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.product__title {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.product__image {
+  margin: -5em 0 0 0;
+}
+
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+  .product__title {
+    margin: 0;
+  }
+  .product__image {
+    float: right;
+    margin: 0 -5em 0 0;
+    width: 25%;
+  }
+  .product.blueone .product__image {
+    float: left;
+    shape-outside: url(images/fashion3.jpeg);
+    shape-margin: 2em;
+    margin: 0 0 0 -5rem;
+  }
+}
+
+.blue {
+  background: radial-gradient(#4685aa, #87ebcd);
+}
+
+.purple {
+  background: radial-gradient(#2098dd, #916fcf);
+}
+
+.green {
+  background: radial-gradient(#52b39e, #0b94ca);
+}
+/*# sourceMappingURL=style.css.map */
